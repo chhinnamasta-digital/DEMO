@@ -1,0 +1,112 @@
+@mixin register($register_class_name)
+{
+    #{$register_class_name}
+    {
+        .row
+        { 
+           
+            [class*='col-5']
+            {
+                
+                #{$register_class_name}
+                {
+                    padding-left: 50px;
+
+                    #{$register_class_name}
+                    {
+                        
+                        .logo
+                        {
+                            // margin-bottom: 20px;
+                           
+                            img
+                            {                              
+                                // height: 50px;
+                            }
+                        }
+                        .sign-up-form
+                        {
+
+                            h4
+                            {
+                                
+                                // font-size: 25px;  
+                            }
+                            p
+                            {
+                               
+                            }
+                            form#sign-up
+                            {
+                                margin-top:20px;
+
+                                & :is(input[type='email'], input[type='password'], textarea, input[type='text'])
+                                {  
+                                    // height: $form_field_height;
+                                }
+                                .button_style                                
+                                {
+                                    // height: $form_field_height;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            [class*='col-7']
+            {
+                
+                #{$register_class_name}
+                {
+                    
+                    .loadingscreen
+                    {
+                        img
+                        {
+                            
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    .spinner_modal
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        &::after
+        {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color:rgba(0,0,0, 0.5);
+        }
+        .spinner_-content
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 999;
+            .spinner_-body
+            {
+                span
+                {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+@include register(".register")

@@ -1,0 +1,23 @@
+.dashboard_chart_section{
+    width:100%;
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    margin-top: 35px;
+    .js_chart_headeing{
+        background: transparent;
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.02em;
+            color: $colorWhite;
+        }
+        canvas
+        {
+            max-height: 330px;
+        }
+    }
+}

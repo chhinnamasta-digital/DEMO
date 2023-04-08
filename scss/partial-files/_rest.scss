@@ -1,0 +1,21 @@
+// font-family: 'Inter', sans-serif;
+*{margin:0; padding:0; box-sizing: border-box;}
+body
+{    
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.AlertMess{
+    color:lightcoral;
+}
+.ErrorMess{
+    color:rgb(245, 0, 0);
+}
+.SuccessMess{
+    color:greenyellow;
+}

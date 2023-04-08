@@ -1,0 +1,88 @@
+form#sign-in, form#sign-up
+{
+    margin-top:50px;
+
+    label
+    {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        
+        &:first-letter
+        {
+            text-transform: uppercase;
+        }
+    }
+    & :is(input[type='email'], input[type='password'], input[type='email'], input[type='password'], textarea, input[type='text'])
+    {                                
+        width: 369px;
+        height: 49px;
+        border: 1px solid #898989;
+        border-radius: 7px;
+        background: transparent;
+        color: $colorWhite;
+
+    }
+    & .form-check
+    {
+        & :is(input[type='checkbox'])
+        {
+            width: 17px;
+            height: 17px;
+            border: 1px solid $colorCheckboxBorder;
+            border-radius: 2px;
+        }
+        .checkbox:checked{            
+            background-color: $colorYellow;
+            }
+    }
+    .form-check
+    {
+    margin-top:40px;
+    }
+    p.from_p
+    {
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: -0.02em;                                
+        color: $colorParagraph;
+        margin-top: 20px;
+    }
+}
+.response_msg
+{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    color: $colorYellowHover;
+    display: none;
+    width: 30%;
+    line-height: 32px;
+    border: 1px solid;
+    padding: 0.2rem 1rem;
+    .messageAlert{
+        position: relative;
+        width: 100%;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+     .messageClose{
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding-left: 20px;
+        &::after{
+            content: "X";
+            color: #fff;
+        }
+     }   
+    }
+}
+
+// See Password
+.seePass{
+    cursor: pointer;
+}

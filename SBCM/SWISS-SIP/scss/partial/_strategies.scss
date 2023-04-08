@@ -1,0 +1,65 @@
+.strategies
+{
+    background:url("../images/slider/01.jpg") no-repeat top center;
+    background-size: cover;
+}
+.strategies_carousel
+{
+    width:100%;
+}
+
+.modal
+{
+    align-items: center;
+    top:20%;
+}
+.modal-dialog
+{
+    max-width:85%; //850px;
+    position: relative;
+    z-index: 98;
+    @include min_max_width(0px, 991px)
+    { 
+        max-width:100%;
+    }
+    .modal-content
+    {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 50px;
+        
+        @include min_max_width(0px, 991px)
+        { 
+            padding: 25px;
+        }
+        h2
+        {            
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $colorRed;
+        }
+        p
+        {            
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $colorWhite;
+        }
+        .btn-close
+        {
+            filter: invert(1);
+            position: absolute;
+            right: 0;
+            top: -10px;
+            z-index: 99;
+        }
+    }
+
+}
+.modal.show 
+{
+    .modal-dialog
+    {
+        // top: 50%;
+        // transform: translate(0, -50%);
+    }
+}

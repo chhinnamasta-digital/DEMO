@@ -1,0 +1,40 @@
+.menu_section
+{    
+    width:100%;    
+    nav
+    {
+        a.navbar-brand
+        {
+        }
+        #navbarToggler
+        {
+            ul
+            {
+                li.nav-item
+                {
+                    padding: 0.5rem 0.7rem;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    &.active
+                    {
+                        a
+                        {
+                            color: $colorRed !important;
+                        }
+                    }
+                    a.nav-link
+                    {
+                        color: $colorWhite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-light .navbar-toggler-icon
+{
+    filter: invert(1);
+}

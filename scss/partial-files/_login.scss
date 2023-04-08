@@ -1,0 +1,90 @@
+@mixin login($login_class_name)
+{
+    #{$login_class_name}Page
+    {
+        position: relative;
+        width:100%;
+        overflow-y: auto; 
+        height: 100%;
+        color: $colorWhite; 
+
+        .row
+        { 
+            margin: 0;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            overflow-y: auto;
+
+            [class*='col-5']
+            {
+                background-color: $colorBlack;
+                display: flex;
+                align-items: center;
+
+                #{$login_class_name}Left_block
+                {
+                    padding-left: 100px;
+                    width: 100%;
+                    #{$login_class_name}Detail
+                    {
+                        display: flex;
+                        align-items: center;
+                        flex-flow: wrap row;
+                        .logo
+                        {
+                            margin-top: 15px;
+                            margin-bottom: 35px;
+                            width:100%;
+                            a
+                            {
+                                img
+                                {
+                                    max-width:100%;
+                                    max-height: 90px;
+                                }
+                            }
+                        }
+                        .sign-in-form, .sign-up-form
+                        {
+
+                            h4
+                            {
+                                font-weight: 700;
+                                font-size: 32px;                            
+                                letter-spacing: -0.02em; 
+                            }
+                            p
+                            {
+                                font-weight: 400;
+                                font-size: 16px;
+                                letter-spacing: -0.02em;                            
+                                color: $colorParagraph;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            [class*='col-7']
+            {
+                background-color: $colorLightBlack;
+                display: flex;
+                align-items: center;
+                #{$login_class_name}Right_block
+                {
+                    width: 100%;
+                    .loadingscreen
+                    {
+                        img
+                        {
+                            display: block;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+@include login(".login")

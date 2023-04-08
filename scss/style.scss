@@ -1,0 +1,16 @@
+// sass scss/style.scss:css/style.css --watch --style compressed
+@import 'partial-files/mixin';
+@import 'partial-files/variables';
+@import 'partial-files/buttons';
+@import 'partial-files/forms';
+@import 'partial-files/homepage';
+@import 'partial-files/rest';
+@import 'partial-files/header';
+@import 'partial-files/signup';
+@import 'partial-files/login';
+@import 'partial-files/registration-form';
+@import 'partial-files/main';
+@import 'partial-files/common';
+@import 'partial-files/singleChart';
+@import 'partial-files/dashboard';
+@import 'partial-files/footer';

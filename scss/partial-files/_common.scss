@@ -1,0 +1,98 @@
+.success
+{
+    >.row
+    {
+        .col-5
+        {
+            display: flex;
+            align-items: center;
+            height: initial;
+            .loginLeft_block 
+            {
+                padding-left: 12px;
+                .loginDetail
+                {
+                    justify-content: center;
+                    .logo
+                    {
+                        text-align: center;
+                        margin-bottom: 90px !important;
+                    }
+                    .passwordsuccess_logo
+                    {
+                        margin-bottom: 20px !important;
+                    }
+                    h4
+                    {
+                        font-size: 40px !important;
+                    }
+                    h4.passwordsuccess_h4
+                    {
+                       font-size: 32px !important;
+                       margin-top: 60px;
+                    }
+                    p
+                    {                        
+                        font-size: 20px !important;
+                    }
+                    .success_check
+                    {
+                        margin-top: 50px;
+                        text-align: center;
+                    }
+                    .sign-in-form
+                    {
+                        button
+                        {
+                            margin: 50px auto 0;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-transform: capitalize;
+                            color: $colorBlack;
+                            span
+                            {
+                                margin-left: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.reset_password
+{
+    >.row 
+    {
+
+        >.col-5
+        {
+            >.loginLeft_block
+            {
+
+                >.loginDetail
+                {
+
+                    >p
+                    {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+.password_ass
+{
+    .col-5
+    {
+        display: flex;
+        align-items: center;
+        .logo
+        {
+            margin-bottom: 100px !important;
+        }
+    }
+}

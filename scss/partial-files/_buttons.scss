@@ -1,0 +1,13 @@
+.button_style
+{
+    height: 49px;
+    background: $colorYellow;
+    border: 1px solid $colorFormBorder;
+    border-radius: 7px;
+    width: 369px;
+    margin-top: 20px;
+}
+.button_style:hover:not([disabled])
+{
+    background-color: $colorYellowHover;
+}

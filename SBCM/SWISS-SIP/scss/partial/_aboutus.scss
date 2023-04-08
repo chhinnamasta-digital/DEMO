@@ -1,0 +1,30 @@
+.about-us
+{
+    background-color: $blackColor;
+    @include min_max_width(0px, 991px)
+    {   
+        position: relative !important;
+    }
+    .banner_text_wrap
+    {
+        top:0 !important;
+    }
+    .about-carousel
+    {
+        padding:  0 29px;
+        width:100%;
+        h2
+        {
+            font-family: 'Jura';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px; 
+            color: $colorRed;
+        }
+        p
+        {
+
+        }
+
+    }
+}

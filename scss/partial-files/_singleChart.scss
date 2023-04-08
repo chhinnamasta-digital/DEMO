@@ -1,0 +1,19 @@
+.singleChartOutlet{
+    position: relative;
+    padding: 2rem 0;
+    ._currentPrice{        
+        min-width: 100px;
+        display: table;
+        margin: 0 0 0 auto;
+        .realTime_{
+            display: grid !important;
+            p{
+                margin: 0;
+            }
+            label{
+                width: 100%;
+                color: $colorFormBorder;
+            }
+        }
+    }
+}
